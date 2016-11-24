@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+html(lang=es)
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(rel="stylesheet", href="css/style.css")
+		title Impanel
+
+		body
+			//El Header
+			.ed-container
+				.ed-item.logo.movil-100.tablet-100.web-100.center-text
+					img(src="images/logo.png")
+			.ed-container#menu-principal  
+				.ed-item.center-text.main-menu.main-center
+					include paginas/menu
+				.ed-item#imagen-fondo.no-padding
+					.img-fondo.full.web-70.main-center.web-70
+						img(src="images/casapaneles.jpg")
+			
+			//Los Productos
+			.ed-container#detalles-tecnicos
+				.ed-item.web-3-3
+					h2 Componentes de los Paneles.
+				.ed-item.web-3-3
+					.ed-container.main-center
+						.ed-item.panel-1.web-1-3
+							h3 OSB:
+							ul
+								li Estructural, gran estabilidad dimensional.
+								li Alta resistencia mecánica.
+								li Durable.
+								li Certificación APA (american plywood association).
+								li Responsable con el medio ambiente, manejo forestal sustentable y uso eficiente de la madera, uso de madera de rápido crecimiento como pino, álamo y eucalipto.
+								li Alta resistencia a la tracción, flexión, corte y comprensión.
+								li Baja permeabilidad al vapor de agua.
+								li Resistencia al fuego f-15.
+						.ed-item.panel-2.web-1-3
+							h3 EPS:
+							ul
+								li Excelente aislamiento térmico, debido al aire ocluido dentro de una estructura estructura celular conformada por poliestireno (98% del volumen es aire).
+								li Buena resistencia higroscópica, mínima absorción de agua.
+								li Estabilidad dimensional, mínimas variaciones frente a variaciones térmicas y al paso del tiempo.
+								li Conductividad térmica 0,04w/m°k.
+								li Comportamiento al fuego auto extinguible.
+								li Es imputrescible, no enmohece, no se descompone y no produce gases nocivos.
+								li Ofrecemos diferentes tipos de paneles, que varias según sus dimensiones y espesores, estos se fabrican de acuerdo al uso y la necesidad del cliente. Se utilizan como muros perimetrales.
+					.ed-container
+						.ed-item.base2-2.movil-2-2.web-2-2.main-center.manual
+							a(href="descargas/manual-construccion.pdf") Descargar Manual R-Control
+
+							
+
+			//El Footer
+			include paginas/footer	
+
+		script(src="js/jquery.js")
+		script(src="js/toggle.js")

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700')
+$texto: 'Raleway'
+
++desde-hasta(base,movil)
+	.slick-prev, .slick-next
+		display: none
+	.slick-arrow
+		display:none
+	button
+		display: none
+
+.logo
+	margin: 10px 0 10px 0
+	background: $blanco
+	height: 80px
+	color: #fff
+	h1
+		font-size: 38px
+
+#header
+	+desde-hasta(base,tablet)
+		.menu-principal2
+			display: none
+		li
+			text-align: left
+		.costado
+			margin-left: 20px
+	+desde(web)
+		.menu-principal
+			display: none
+		#toggle-menu
+			display: none
+
+
+#toggle-menu
+	cursor: pointer
+	text-transform: uppercase
+	padding: 10px 0 10px 0
+	i
+		margin-right: 5px
+	.texto-menu
+		font-family: $texto
+
+#imagen-fondo
+		+desde-hasta(base,movil)
+			.slick-slider
+				height: 200px
+
+.menu-principal
+	z-index: 5
+
+#imagen-fondo
+	z-index: 0
+
+#impassive-house
+	h2
+		color: black
+		font-family: $texto
+
+.main-menu
+	text-align: center
+	background: #eee
+
+	z-index: 5
+	a
+		color: black
+		font-family: $texto
+		font-size: 14px
+		&:hover
+			color: white
+	ul li ul li
+		background: #eee
+		font-size: 15px
+
+#imagen-fondo
+	margin: 0 0 20px 0
+
+#cuerpo
+	margin-bottom: 30px
+
+	h1
+		color: black
+		font-family: $texto
+		font-size: 30px
+	h2
+		color: black

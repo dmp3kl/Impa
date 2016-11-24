@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+html(lang=es)
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(rel="stylesheet", href="css/style.css")
+		title Impanel
+
+		body
+			//El Header
+			.ed-container
+				.ed-item.logo.movil-100.tablet-100.web-100.center-text
+					img(src="images/logo.png")
+			.ed-container#menu-principal  
+				.ed-item.center-text.main-menu.main-center
+					include paginas/menu
+				.ed-item#imagen-fondo.no-padding
+					.img-fondo.full.web-70
+						img(src="images/banner5.jpg")
+			
+			.ed-container#ventajas
+				.ed-item
+					h2.centrar-contenido Ventajas
+				
+				.ed-item
+					h3 
+						i(class="fa fa-fire")
+						| Mayor Aislación Térmica.
+					p Los paneles SIP optimizan el uso de la energía térmica ya que disminuye significativamente las pérdidas de calor de la vivienda.  Como consecuencia de esto se necesita menos combustible para lograr una temperatura de confort al interior del hogar, lo que a su vez provoca una reducción en los costos de calefacción. Los paneles SIP están construidos monolíticamente con un núcleo continuo de poliestireno expandido (EPS) de 15 kg/m3 de densidad y por esta razón, la conductividad térmica de los paneles es considerablemente menor a la construcción convencional.
+				.ed-item
+					h3 
+						i(class="fa fa-clock-o")
+						| Rapidez 
+					p La construcción con paneles SIP acelera el proceso de fabricación de la vivienda, además estos se pueden entregar con los cortes solicitados por el cliente, lo que hace más rápido aún el proceso del montaje. Existe también una rapidez asociada al montaje de la vivienda, ya que no se requiere mano de obra especializada, los paneles son livianos, modulables y fáciles de montar.
+
+				.ed-item
+					h3 
+						i(class="fa fa-envira")
+						| Sustentable.
+					p El sector de la construcción es uno de los mayores consumidores de recursos naturales y genera una enorme cantidad de desechos; el uso de materiales como cemento, concreto y aluminio genera que el impacto ambiental y los costos energéticos aumenten diariamente. La utilización de paneles SIP disminuye considerablemente los desechos provocados por el sector de la construcción convencional y se requiere de menos energía para la producción, además existe un ahorro de energía en el largo plazo asociado a la aislación de la vivienda. Los paneles SIP se consideran uno de los métodos de construcción de más bajo consumo; se necesitan menos materiales de producción para la construcción de la vivienda, se necesita menos energía para mantenerla y generan menos contaminación.
+				.ed-item
+					h3 
+						i(class="fa fa-usd")
+						| Menor Costo.
+					p La construcción con paneles SIP disminuye los costos asociados a la fabricación de la vivienda debido al menor gasto en mano de obra en la obra gruesa ya que disminuyen los tiempos de ejecución al ser un sistema de construcción simple y rápido.
+					
+				.ed-item
+					h3
+						i(class="fa fa-truck")
+						| De Fácil Transporte.
+					p Su bajo peso permite el manejo manual del panel y dada la estandarizacion de medidas (1,22 x 2,44 metros) es fácilmente apilable en el transporte via camión y/o vehículos menores.
+				.ed-item
+					h3 
+						i(class="fa fa-fire-extinguisher")
+						| Mayor Resistencia Al Fuego.
+					p A pesar de su condicion F15 dada por el OSB, debido a la ausencia de cavidades de aire en las paredes se obtiene tiene una buena resistencia al fuego. El núcleo de EPS es autoextinguible y por tanto ayuda a un buen comportamiento.
+					
+				.ed-item
+					h3 
+						i(class="fa fa-building")
+						| Mayor Resistencia Mecánica.
+					p Los paneles poseen una mayor resistencia a la compresión que lo exigido por la OGUC. IMPANEL certifica aleatoriamente su produccion en los laboratorios de IDIEM.
+
+			//El Footer
+			include paginas/footer
+		script(src="js/jquery.js")
+		script(src="js/toggle.js")

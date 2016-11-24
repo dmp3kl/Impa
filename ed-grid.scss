@@ -1,0 +1,56 @@
+// ED GRID
+// Desde este archivo podrá modificar los componentes y valores
+// por defecto de ed-grid
+
+// fonts
+/*
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+*/
+
+// flex-container y flex-item
+$container: ed-container;
+$item: ed-item;
+
+// Ancho máximo de cada container
+$max-width: 1000px;
+
+// Separación entre items
+$padding: 15px;
+
+// Tamaños. Puede editar los nombres y las
+// medidas, añadir más o quitar.
+// todo: crear funcion para convertir px a em y usarla aqui
+$breakpoints: (
+  base   : 330px,
+  movil  : 430px,
+  tablet : 768px,
+  web    : 1024px,
+  hd     : 1400px
+);
+
+$fractions: 2 3 4 6 8;
+
+// Por favor desactive los que no vaya a usar para mejorar el rendimiento
+
+@import "componentes/variables";   // Acá van los colores
+@import 'componentes/iconos';
+@import "componentes/base";        // Estilos básicos para RWD
+@import "componentes/core";        // Núcleo de ED GRID, grupos y cajas
+@import "componentes/mixins";      // Mixins ED GRID
+@import "componentes/desarrollo";  // Modo desarrollo
+@import "componentes/visibilidad"; // Controlar la visibilidad
+@import "componentes/utilidades";  // Utilidades adicionales
+@import "componentes/video";       // Videos responsive
+@import "componentes/ed-menu";     // Ed menu
+@import "componentes/flexbox";     // Flexbox
+@import "componentes/offset";      // Offset
+@import "componentes/modulos";      // Botones, sociales
+
+// acá va el tema de la página
+
+@import "componentes/paginas/index";
+@import "componentes/paginas/footer";
+@import "componentes/paginas/acordeon";
+@import "componentes/paginas/cuerpo";

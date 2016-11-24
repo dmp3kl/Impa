@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+html(lang=es)
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(rel="stylesheet", href="css/style.css")
+		title Impanel
+
+		body
+			//El Header
+			.ed-container
+				.ed-item.logo.movil-100.tablet-100.web-100.center-text
+					img(src="images/logo.png")
+			.ed-container#menu-principal  
+				.ed-item.center-text.main-menu.main-center
+					include paginas/menu
+
+			.ed-container#impassive-house
+				.ed-item.web-2-2
+					h2 ImpasivHaus 50m2
+				.ed-item.web-2-2.main-center
+					img(src="images/impassivehaus1.jpg").impa1
+				.ed-item.web-2-2
+					p Las <span class="negritas">ImpasivHaus</span> surgen del concepto de “Passive Haus” de origen Alemán. Es un estándar para la construcción de viviendas con menor consumo energético; lo que se logra aumentando el nivel de aislamiento térmico, controlando las infiltraciones, minimizando los puentes térmicos y un alto nivel de estanquidad.
+					p Las <span class="negritas">ImpasivHaus</span> es un concepto de soluciones constructivas que recoge la normativa chilena de la <span class="negritas">OGUyC</span>, en lo referente a la normativa térmica y, por otra parte, aplica en parte el concepto de “Passive Haus”.
+				.ed-item.web-2-2
+					h2 ImpasivHaus 77m2
+				.ed-item.web-2-2.main-center
+					img(src="images/impassivehaus2.jpg").impa2.web-70
+				.ed-item.web-2-2
+					p Si bien la norma chilena exige máximas tramitancias en función de la localización geográfica no exige comportamientos mínimos de la vivienda. Passive Haus, en cambio, exige un comportamiento térmico completo donde se mezclan las tramitancias con evitar los puentes térmicos y asegurar la estanqueidad de la vivienda.
+					p Las ImpasivHaus mejoran sustantivamente el comportamiento térmico, traduciéndose esto en significativos ahorros energéticos, además considera la incorporación de energías renovables para la generación de electricidad y agua caliente sanitaria, con esto, el consumo anual disminuye considerablemente comparado con una vivienda convencional.
+
+			//El Footer
+			include paginas/footer	
+		
+		script(src="js/jquery.js")
+		script(src="js/toggle.js")

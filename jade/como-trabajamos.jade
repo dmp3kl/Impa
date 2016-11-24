@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+html(lang=es)
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(rel="stylesheet", href="css/style.css")
+		title Impanel
+
+		body
+			//El Header
+			.ed-container
+				.ed-item.logo.movil-100.tablet-100.web-100.center-text
+					img(src="images/logo.png")
+			.ed-container#menu-principal  
+				.ed-item.center-text.main-menu.main-center
+					include paginas/menu
+
+			.ed-container#como-trabajamos
+				.ed-item.base-4-4.web-2-4
+					h2 ¿Cómo Trabajamos?
+
+					ol
+						li(value="1") Compra de Paneles
+					ul
+						li Si desea paneles terminados puede acercarse a nuestras oficinas a realizar la compra y para luego retirarlos en nuestra planta. Contamos con stock para entrega inmediata.
+						li Puede traer a nuestras oficinas los planos de su proyecto de arquitectura y nosotros realizamos el dimensionado y entregamos su presupuesto.
+					ol(type="2")
+						li(value="2") Entrega de Paneles
+					ul
+						li Puede ir a retirar los paneles a nuestra planta, después de realizada la compra. Además nuestra empresa cuenta con despacho dentro de la ciudad, el cual se cotiza según la dirección.
+				.ed-item.base-4-4.web-2-4
+					.formulario-contacto
+						h2.consulta Consultas
+						form(action="php/enviar.php" method="post")
+							.nombre
+								label(for="nombre") Nombre:
+								input(name="nombre" class="nombre")
+							.correo
+								label(for="correo") Su Correo:
+								input(name="correo" class="correo")
+							.asunto
+								label(for="asunto") Asunto:
+								input(name="asunto" class="asunto")
+							.texto
+								label(for="cuerpo") Consulta:
+								textarea(name="cuerpo" class="cuerpo")
+							.btn-insertar
+								input(type="submit" value="Enviar").enviar
+
+			//El Footer
+			include paginas/footer
+		script(src="js/jquery.js")
+		script(src="js/toggle.js")

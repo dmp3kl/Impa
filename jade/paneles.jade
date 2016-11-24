@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+html(lang=es)
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(rel="stylesheet", href="css/style.css")
+		title Impanel
+
+		body
+			//El Header
+			.ed-container
+				.ed-item.logo.movil-100.tablet-100.web-100.center-text
+					img(src="images/logo.png")
+			.ed-container#menu-principal  
+				.ed-item.center-text.main-menu.main-center
+					include paginas/menu
+				.ed-item#imagen-fondo.no-padding
+					.img-fondo.full.web-70
+						img(src="images/nuestros-productos.jpg")
+			
+			.ed-container#paneles
+				.ed-item.web-3-3.importante
+					h2 Contamos con Stock para Entrega Inmediata.
+				.ed-item.web-3-3
+					h2 Paneles
+				.ed-item.web-3-3.txt
+					p Los paneles SIP (Structural insulated panels) son elementos modulares conformados por dos placas de OSB (Oriented strand board) de 11,1 mm de espesor, las cuales están firmemente adheridas a un núcleo de poliestireno expandido de 15 kg/m3 de densidad a través de un potente adhesivo. Esto se logra con un proceso industrial bajo estricto control de calidad.
+					p Los paneles miden 1,22 x 2,44 mts. y se fabrican de los siguientes espesores terminados según los requerimientos del cliente:
+				.ed-item.web-3-3
+					.tabla-medidas
+						.cont-fila
+							.cont-col Panel
+							.cont-col Composición
+							.cont-col Largo (mm)
+							.cont-col Ancho (mm)
+							.cont-col Espesor (mm)
+							.cont-col Rebaje en 4 lados (mm)
+							.cont-col.corto Peso (Kg)
+						.cont-fila
+							.cont-col 76 mm
+							.cont-col Osb 11,1 mm + EPS 45 mm + Osb 11,1mm
+							.cont-col 2440
+							.cont-col 1220
+							.cont-col 67
+							.cont-col 45
+							.cont-col 47,4
+						.cont-fila
+							.cont-col 89 mm
+							.cont-col.ancho Osb 11,1 mm + EPS 67 mm + Osb 11,1mm
+							.cont-col 2440
+							.cont-col 1220
+							.cont-col 89
+							.cont-col 45
+							.cont-col 48,3
+						.cont-fila
+							.cont-col 114 mm
+							.cont-col.ancho Osb 11,1 mm + EPS 92 mm + Osb 11,1mm
+							.cont-col 2440
+							.cont-col 1220
+							.cont-col 114
+							.cont-col 45
+							.cont-col 49,4
+						.cont-fila
+							.cont-col 142 mm
+							.cont-col.ancho Osb 11,1 mm + EPS 120 mm + Osb 11,1mm
+							.cont-col 2440
+							.cont-col 1220
+							.cont-col 142
+							.cont-col 45
+							.cont-col 50,4
+						.cont-fila
+							.cont-col 162 mm
+							.cont-col Osb 11,1 mm + EPS 140 mm + Osb 11,1mm
+							.cont-col 2440
+							.cont-col 1220
+							.cont-col 162
+							.cont-col 45
+							.cont-col 51,2
+					
+				.ed-item.web-3-3.main-center
+					img(src="images/panel-osb.png").web-50.panel-osb
+
+
+			//El Footer
+			include paginas/footer
+		script(src="js/jquery.js") 
+		script(src="js/toggle.js")

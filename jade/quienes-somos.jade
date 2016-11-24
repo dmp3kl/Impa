@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+html(lang=es)
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(rel="stylesheet", href="css/style.css")
+		title Impanel
+
+		body
+			//El Header
+			.ed-container
+				.ed-item.logo.movil-100.tablet-100.web-100.center-text
+					img(src="images/logo.png")
+				.ed-item.center-text.main-menu.main-center
+					include paginas/menu
+				.ed-item#imagen-fondo.no-padding
+					.img-fondo.full.web-70
+						img(src="images/quienes-somos.jpg")
+
+			.ed-container#quienes-somos
+				.ed-item
+					p Empresa Magallánica con más de 5 años de experiencia en la fabricación de paneles SIP y más de 35 años de existencia en la región. Nuestra misión es proveer un material de alta calidad para la construcción de viviendas, fabricado en la región cumpliendo con la normativa térmica chilena vigente para Magallanes.
+					p Contamos con una alta capacidad de producción. Nos podemos adecuar a proyectos de cualquier envergadura. 
+
+			//El Footer
+			include paginas/footer.jade
+
+		script(src="js/jquery.js")
+		script(src="js/toggle.js")

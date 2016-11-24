@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+html(lang=es)
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(rel="stylesheet", href="css/style.css")
+		link(rel="stylesheet", href="css/slick.css")
+		link(rel="stylesheet", href="css/slick-theme.css")
+		title Impanel
+
+		body
+			//El Header
+			.ed-container
+				.ed-item.logo.movil-100.tablet-100.web-100.center-text
+					img(src="images/logo.png")
+			.ed-container#menu-principal  
+				.ed-item.center-text.main-menu.main-center
+					include paginas/menu
+				.ed-item#imagen-fondo.no-padding
+					.img-fondo.full.web-70
+						//img(src="images/3copia.jpg")
+			
+			//Los Productos
+			.ed-container#galeria.abcenter
+				.ed-item.web-2-2.my-slider
+					h2 Casas construidas con paneles SIP
+					.slider.multipleItems
+						.ele
+							img(src="images/casaVergara1.JPG")
+						.ele
+							img(src="images/casaVergara2.JPG")
+						.ele
+							img(src="images/cc1.JPG")
+						.ele
+							img(src="images/cc2.JPG")
+						.ele
+							img(src="images/v1.JPG")
+						.ele
+							img(src="images/v2.JPG")
+						.ele
+							img(src="images/v3.JPG")
+						.ele
+							img(src="images/v4.JPG")
+						.ele
+							img(src="images/ag1.JPG")
+						.ele
+							img(src="images/ag2.JPG")
+						.ele
+							img(src="images/ag3.JPG")
+						.ele
+							img(src="images/agr1.JPG")
+						.ele
+							img(src="images/agr2.JPG")
+						.ele
+							img(src="images/agr3.JPG")
+						.ele
+							img(src="images/ultima1.jpg")
+						.ele
+							img(src="images/ultima2.jpg")
+						.ele
+							img(src="images/ultima3.jpg")
+				.ed-item.web-2-2
+					h2 ImpasivHaus
+					.slider.multiple-items
+						.ele
+							img(src="images/ISOMETRICA1.jpg")
+						.ele
+							img(src="images/ISOMETRICA2.jpg")
+						.ele
+							img(src="images/impassive1.png")
+						.ele
+							img(src="images/impassive2.png")
+
+			//El Footer
+			include paginas/footer.jade
+
+		script(src="js/jquery.js")
+		script(src="js/slick.js")
+		script(src="js/scripts.js")
+		script(src="js/toggle.js")

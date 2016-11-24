@@ -1,0 +1,315 @@
+#cuerpo
+	font-family: $texto
+	font-size: 14px
+	color: #575854
+
+	.timportante
+		margin-top: -40px
+		h1
+			font-size: 40px
+	.circulo-1, .circulo-2, .circulo-3
+		border-radius: 10%
+		border: 2px solid #575854
+		width: 200px
+		height: 170px
+		padding-top: 30px
+		margin-bottom: 20px
+		i
+			font-size: 60px
+	+hasta(web)
+		.timportante
+			h1
+				font-size: 25px
+		.circulo-1, .circulo-2, .circulo-3
+			width: 150px
+			height: 120px
+			padding-top: 30px
+			margin-bottom: 20px
+			i
+				font-size: 40px
+			h2
+				font-size: 16px
+
+#ventajas
+	color: #575854
+	h2
+		font-family: $texto
+		color: black
+	.ed-item
+		text-align: justify
+		h3
+			font-family: $texto
+			color: #464743
+			i
+				margin-right: 3px
+		p
+			font-family: $texto
+			font-size: 16px
+
+#paneles
+	color: #575854
+	.panel-osb
+		margin-top: 30px
+				
+
+	h2
+		font-family: $texto
+		font-size: 35px
+		color: black
+		text-align: center
+	.importante
+		.txt
+			font-size: 16px
+		h2
+			font-family: $texto
+			transition: 0.6s ease-in-out
+		&:hover
+			color: white
+			background: #809b55
+	h3
+		font-family: $texto
+	.ed-item
+		text-align: justify
+		h3
+			font-family: $texto
+			i
+				margin-right: 3px
+		p
+			font-family: $texto
+			font-size: 14px
+		ul
+			li
+				font-family: $texto
+				font-size: 14px
+	
+	.panel-osb
+		width: 700px
+		height: 385px
+
+	.tabla-medidas
+		display: table
+		border: solid 1px black
+		width: 100%
+		border-radius: 3px
+		.cont-fila
+			display: table-row
+			&:first-child
+				background: #809b55
+			.cont-col
+				border: 1px solid #fff
+				display: table-cell
+				vertical-align: middle
+				font-family: $texto
+				font-size: 14px
+				text-align: center
+				padding: 5px
+
+	
+	+desde-hasta(base, movil)
+		.importante
+			h2
+				font-size: 24px
+				text-align: center
+		.panel-osb
+			height: 100%
+		.tabla-medidas
+			display: table
+			border: solid 1px black
+			width: 100%
+			border-radius: 3px
+			.cont-fila
+				display: table-row
+				&:first-child
+					background: #809b55
+					color: white
+				.cont-col
+					border: 1px solid #fff
+					display: table-cell
+					vertical-align: middle
+					font-family: $texto
+					font-size: 10px
+					text-align: center
+					padding: 5px
+
+#detalles-tecnicos
+	h2
+		text-align: center
+		font-family: $texto
+	a
+		font-family: $texto
+		font-size: 30px
+		font-weight: 300
+		margin: 30px 0 0 0
+		color: black
+		&:hover
+			color: red
+	.manual
+		text-align: center
+	.panel-1, .panel-2
+		border-radius: 1%
+		background: #eeeeee
+		text-align: justify
+		margin: 10px
+		padding: 20px
+		width: 400px
+		font-family: $texto
+		font-size: 14px
+	+desde-hasta(base,movil)
+		.panel-1, .panel-2
+			font-size: 13px
+
+#como-trabajamos
+	color: #575854
+	h2, h3
+		font-family: $texto
+		color: black
+	h2
+		margin-top: 41px
+	.consulta
+		margin-top: 22px
+	ol
+		li
+			font-family: $texto
+			font-size: 19px
+	ul
+		li
+			font-family: $texto
+			margin-left: 15px
+			font-size: 14px
+
+	.formulario-contacto
+		background: #eeeeee
+		padding: 10px 0 10px 0
+		margin-top: 10px
+		h2
+			padding-left: 48px
+		div
+			text-align: left
+			margin: 5px
+			padding-left: 5px
+		label
+			float: left
+			padding-left: 40px
+			font-family: $texto
+			font-size: 12px
+			width: 125px
+			line-height: 30px
+		select, input
+			width: 250px
+			padding: 5px
+		.enviar
+			margin-left: 45px
+		select
+			width: 166px
+			background: #fff
+			color: #585757
+			padding: 5px
+			font-size: 13px
+			line-height: 100%
+			border: 1px solid #C1c1c1
+			border-radius: 0
+			height: 30px
+			-webkit-appearance: none
+		textarea
+			width: 250px
+			height: 150px
+		.btn-insertar
+			text-align: center
+
+		+desde-hasta(base,movil)
+			h2
+				padding-left: 28px
+			label
+				padding-left: 20px
+				width: 100px
+			input
+				width: 180px
+			textarea
+				width: 180px
+				height: 150px
+
+#impassive-house
+	color: #575854
+	p
+		font-family: $texto
+		text-align: justify
+	.negritas
+		font-weight: bold
+	h2
+		text-align : center
+		margin-top : 60px
+		color      : black
+	.impa1
+		max-width  : 700px
+		height : 400px
+	.impa2
+		max-width  : 700px
+		height : 390px
+	+desde-hasta(base,movil)
+		.impa1, .impa2
+			height: 100%
+		p
+			font-size: 14px
+		
+#preguntas-frecuentes
+	p
+		font-family: $texto
+		font-size: 15px
+		font-weight: 300
+	button
+		font-family: $texto
+	.panel
+		font-family: $texto
+	+desde-hasta(base,movil)
+		button
+			font-size: 13px
+			
+#quienes-somos
+	p
+		font-family: $texto
+		text-align: justify
+	.main
+		text-align: center
+		background: #2faf00
+		z-index: 5
+		a
+			color: black
+			font-family: $texto
+			font-size: 14px
+			&:hover
+				color: white
+		ul li ul li
+			background: #2faf00
+			font-size: 15px
+
+#galeria
+	h2
+		font-family: $texto
+		margin-top: 60px
+		margin-bottom: 20px
+		font-size: 30px
+	+desde-hasta(base,movil)
+		h2
+			font-size: 20px
+		.slick-prev,.slick-next
+			display: none
+
+#referencias
+	font-family: $texto
+
+	.elemento
+		box-sizing: content-box
+		border: 2px solid black
+		width: 120px
+		height: 150px
+		border-radius: 5px
+		margin: 5px
+		padding: 0
+
+		.imagen
+			border-radius: 5px 5px 0 0
+			border: 4px solid white
+			width: 120px
+			height: 100px
+			padding: 0
+			margin: 0

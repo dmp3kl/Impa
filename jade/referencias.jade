@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+html(lang=es)
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(rel="stylesheet", href="css/style.css")
+		title Impanel
+
+		body
+			//El Header
+			.ed-container
+				.ed-item.logo.movil-100.tablet-100.web-100.center-text
+					img(src="images/logo.png")
+			.ed-container#menu-principal  
+				.ed-item.center-text.main-menu.main-center
+					include paginas/menu
+			
+			.ed-container#referencias.main-center
+				.ed-item.base-2-2.web-2-2
+					p Si necesita obtener mayor información sobre la construcción con paneles Aislantes Estructurales, puede dirigirse a los siguientes links externos:
+
+				.ed-item.elemento.base-1-2
+					.imagen.cross-center
+						img(src="images/car01.jpg")
+					.link.main-center
+						a(href="#") Link a la página
+				.ed-item.elemento.base-1-2
+					.imagen
+						img(src="images/car01.jpg")
+					.link.main-center
+						a(href="#") Link a la página
+				.ed-item.elemento.base-1-2
+					.imagen
+						img(src="images/car01.jpg")
+					.link.main-center
+						a(href="#") Link a la página
+				.ed-item.elemento.base-1-2
+					.imagen
+						img(src="images/car01.jpg")
+					.link.main-center
+						a(href="#") Link a la página
+
+			// El Footer
+			include paginas/footer
+
+			
+		script(src="js/jquery.js")
+		script(src="js/toggle.js")
